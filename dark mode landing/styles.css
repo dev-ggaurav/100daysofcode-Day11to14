@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: Poppins,sans-serif;
+}
+
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: 0.5s all ease-in-out;
+}
+
+:root{
+    --background-color:#fff;
+    --text-color:#1a1a1a;
+}
+
+.dark-theme{
+    --background-color:#1a1a1a; 
+    --text-color:#fff;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+header{
+    margin-bottom: 5rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav h2{
+    font-size: 2.1rem;
+}
+
+.toggle{
+    font-size: 2rem;
+    border: 1px solid var(--text-color);
+    cursor: pointer;
+}
+
+.toggle i{
+    padding:0 0.5rem;
+}
+
+.main-content{
+    text-align: center;
+}
+
+.main-content h2{
+    font-size: 2.6rem;
+    margin-top: 3rem;
+}
+
+.main-content p{
+    font-size: 1.6rem;
+    margin: 1.5rem 0;
+}
+
+button{
+    padding: 1.5rem 2rem;
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    margin:3rem 0;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+}
+
+
+ul i{
+    font-size: 3rem;
+    color: var(--text-color);
+}
+
+footer{
+    margin: 5rem 0;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+footer a{
+    text-decoration: none;
+    color: #482ff7;
+}
+
+
+/* Media Queries */
+@media only screen and (min-width: 800px) {
+    
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main *{
+        flex: 1;
+    }
+
+    .main-content{
+        padding-left: 5rem;
+        padding-top: 3rem;
+    }
+  }
+
+
